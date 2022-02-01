@@ -62,8 +62,8 @@ function Rating({name,img,cast,genre,summary,director,rating}){
   const [dislike,setdislike]= useState(0);
   const [like,setlike]= useState(0);
   return(
-     <div>
-        <img src={img} id="res" alt="pics" />
+     <div className="movie-container">
+        <img src={img} id="res" className="poster" alt="pics" />
         <h3>Movie : {name}</h3>
         <h3>Cast : {cast}</h3>
         <h3>Genre : {genre}</h3>
